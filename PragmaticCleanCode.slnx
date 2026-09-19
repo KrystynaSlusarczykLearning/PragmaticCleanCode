@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Chapter_01/Chapter_01.csproj" />
+  <Project Path="Chapter_02/Chapter_02.csproj" />
+  <Project Path="Chapter_02_RefactoringCaseStudy_After/Chapter_02_RefactoringCaseStudy_After.csproj" />
+  <Project Path="Chapter_02_RefactoringCaseStudy_Before/Chapter_02_RefactoringCaseStudy_Before.csproj" />
+  <Project Path="Chapter_03/Chapter_03.csproj" />
+</Solution>
