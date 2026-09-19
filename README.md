@@ -33,7 +33,7 @@ The refactoring case studies are different: the code there is fully working. Eac
 You can either clone the repository with Git:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/KrystynaSlusarczykLearning/PragmaticCleanCode.git
 ```
 
 or download it as a ZIP file using the "Code" button on GitHub and extract it locally.
