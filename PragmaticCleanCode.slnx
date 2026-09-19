@@ -4,4 +4,17 @@
   <Project Path="Chapter_02_RefactoringCaseStudy_After/Chapter_02_RefactoringCaseStudy_After.csproj" />
   <Project Path="Chapter_02_RefactoringCaseStudy_Before/Chapter_02_RefactoringCaseStudy_Before.csproj" />
   <Project Path="Chapter_03/Chapter_03.csproj" />
+  <Project Path="Chapter_03_RefactoringCaseStudy_After/Chapter_03_RefactoringCaseStudy_After.csproj" />
+  <Project Path="Chapter_03_RefactoringCaseStudy_Before/Chapter_03_RefactoringCaseStudy_Before.csproj" />
+  <Project Path="Chapter_04/Chapter_04.csproj" />
+  <Project Path="Chapter_04_RefactoringCaseStudy_After/Chapter_04_RefactoringCaseStudy_After.csproj" />
+  <Project Path="Chapter_04_RefactoringCaseStudy_Before/Chapter_04_RefactoringCaseStudy_Before.csproj" />
+  <Project Path="Chapter_05/Chapter_05.csproj" />
+  <Project Path="Chapter_06/Chapter_06.csproj" />
+  <Project Path="Chapter_07/Chapter_07.csproj" />
+  <Project Path="Chapter_08/Chapter_08.csproj" />
+  <Project Path="Chapter_09/Chapter_09.csproj" />
+  <Project Path="Chapter_09_RefactoringCaseStudy_After/Chapter_09_RefactoringCaseStudy_After.csproj" />
+  <Project Path="Chapter_09_RefactoringCaseStudy_Before/Chapter_09_RefactoringCaseStudy_Before.csproj" />
+  <Project Path="Chapter_10/Chapter_10.csproj" />
 </Solution>
