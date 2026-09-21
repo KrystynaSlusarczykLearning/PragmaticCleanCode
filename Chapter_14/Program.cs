@@ -64,7 +64,7 @@ void SampleMethod(string name, string dir, string ex, int id)
     {
         numbers = ReadIdsFromText(fileContent);
     }
-    else
+    else if (ex == "json")
     {
         numbers = ReadIdsFromJson(fileContent);
     }

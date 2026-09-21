@@ -81,6 +81,8 @@ public class House
     }
 }
 
+// This call calls the constructor of T at a point in time which can be hard to predict.
+// That's why no constructor should perform any advanced or performance-heavy logic. 
 public class Lazy<T> where T : new()
 {
     private T _instance;
