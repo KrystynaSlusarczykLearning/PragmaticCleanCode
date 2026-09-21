@@ -312,7 +312,7 @@ class PersonalDataFormatter
     public string Format()
     {
         var people = _personalDataReader.ReadPeople();
-        return string.Join("\n",
+        return string.Join(Environment.NewLine,
             people.Select(p => $"{p.Name} born in" +
             $" {p.Country} on {p.YearOfBirth}"));
     }
@@ -352,7 +352,7 @@ abstract class PersonalDataFormatter_Inheritance
     public string Format()
     {
         var people = ReadPeople();
-        return string.Join("\n",
+        return string.Join(Environment.NewLine,
             people.Select(p => $"{p.Name} born in" +
             $" {p.Country} on {p.YearOfBirth}"));
     }
