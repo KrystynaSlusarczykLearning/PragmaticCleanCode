@@ -46,3 +46,7 @@ You'll need an IDE that supports .NET 10, such as:
 - Visual Studio Code with the C# Dev Kit extension
 
 Open the solution or the project folder for the chapter you're currently reading, and build and run it from your IDE as you normally would.
+
+## Found a mistake?
+
+If you spot a bug, a typo, or anything that doesn't match the book, please let me know at [krystyna.slusarczyk.learning@gmail.com](mailto:krystyna.slusarczyk.learning@gmail.com). I'll be grateful for any feedback.

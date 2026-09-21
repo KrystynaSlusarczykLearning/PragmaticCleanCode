@@ -1,0 +1,10 @@
+Bacon,Omnivore
+Salami,Omnivore
+Mozzarella,Vegetarian
+Cheddar,Vegetarian
+Eggs,Vegetarian
+Spinach,Vegan
+Broccoli,Vegan
+Mushroom,Vegan
+Tofu,Vegan,
+Tempeh,Vegan
