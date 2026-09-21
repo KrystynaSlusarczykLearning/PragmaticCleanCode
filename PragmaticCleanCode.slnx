@@ -20,4 +20,10 @@
   <Project Path="Chapter_11/Chapter_11.csproj" Id="dc13c19d-c1ac-468c-9285-090daeaefd8c" />
   <Project Path="Chapter_11_RefactoringCaseStudy_After/Chapter_11_RefactoringCaseStudy_After.csproj" Id="54ebdb4d-0c86-4709-b320-e6e969769a8e" />
   <Project Path="Chapter_11_RefactoringCaseStudy_Before/Chapter_11_RefactoringCaseStudy_Before.csproj" Id="bcad8f7c-f2f8-4978-aa81-03f2b752bdf9" />
+  <Project Path="Chapter_12/Chapter_12.csproj" Id="e2eac621-a8ef-4f9a-abad-b5ad8e2eb358" />
+  <Project Path="Chapter_13/Chapter_13.csproj" Id="887f9654-d84c-4060-b133-f17ff2060686" />
+  <Project Path="Chapter_14/Chapter_14.csproj" Id="612ec116-1639-4e20-89aa-bc6074d63dba" />
+  <Project Path="Chapter_15/Chapter_15.csproj" Id="14ea513f-9d0b-4472-be86-a6f8b04c1a37" />
+  <Project Path="Chapter_15_RefactoringCaseStudy_After/Chapter_15_RefactoringCaseStudy_After.csproj" Id="dc162c63-fbf5-46c7-b73f-a4a5f5e7975a" />
+  <Project Path="Chapter_15_RefactoringCaseStudy_Before/Chapter_15_RefactoringCaseStudy_Before.csproj" Id="efb6c6c8-5c81-4c79-bfc7-df5e42d70d58" />
 </Solution>

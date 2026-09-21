@@ -1,5 +1,4 @@
-﻿using System.Numerics;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 Console.WriteLine("Press any key to close.");
 Console.ReadKey();

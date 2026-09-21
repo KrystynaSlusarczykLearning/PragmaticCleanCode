@@ -121,7 +121,7 @@ public class TransferServiceManager_DependencyGraphObscured
 {
     public static void Initialize()
     {
-        throw new NotImplementedException();
+        // complex initialization
     }
 }
 
@@ -129,7 +129,7 @@ public class InternalServiceQueue_DependencyGraphObscured
 {
     internal static void Initialize()
     {
-        throw new NotImplementedException();
+        // complex initialization
     }
 }
 
@@ -139,14 +139,15 @@ class BankAccount_DependencyGraphObscured
 
     public void AddFunds(int amount)
     {
+        Balance += amount;
         // imagine a lot of complicated code
-        throw new NotImplementedException();
     }
 
     public void TransferTo(BankAccount_DependencyGraphObscured other, int amount)
     {
+        Balance -= amount;
+        other.Balance += amount;
         // imagine a lot of complicated code
-        throw new NotImplementedException();
     }
 }
 
@@ -185,14 +186,15 @@ class BankAccount
 
     public void AddFunds(int amount)
     {
+        Balance += amount;
         // imagine a lot of complicated code
-        throw new NotImplementedException();
     }
 
     public void TransferTo(BankAccount other, int amount)
     {
+        Balance -= amount;
+        other.Balance += amount;
         // imagine a lot of complicated code
-        throw new NotImplementedException();
     }
 }
 
