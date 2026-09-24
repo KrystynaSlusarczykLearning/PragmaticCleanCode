@@ -236,11 +236,11 @@ public class OnlineStore_BreakingDRY
     {
         if (string.IsNullOrEmpty(order.CustomerId))
         {
-            throw new ArgumentException($"The CustomerId must not be empty");
+            throw new ArgumentException($"CustomerId must not be empty.");
         }
         if (string.IsNullOrEmpty(order.ProductId))
         {
-            throw new ArgumentException($"The ProductId must not be empty");
+            throw new ArgumentException($"ProductId must not be empty.");
         }
 
         // Saving to database here...
@@ -292,7 +292,7 @@ public class OnlineStore_NotBreakingDRY
     {
         if (string.IsNullOrEmpty(idToBeValidated))
         {
-            throw new ArgumentException($"The {propertyName} must not be empty.");
+            throw new ArgumentException($"{propertyName} must not be empty.");
         }
     }
 }

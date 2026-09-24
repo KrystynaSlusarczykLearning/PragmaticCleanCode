@@ -10,7 +10,10 @@
 var employeeReportCreator = new EmployeeReportCreator();
 employeeReportCreator.CreateReportFor(employee);
 
-Console.WriteLine("Done!");
+Console.WriteLine("Done! The result was saved to the output folder: " + 
+    Environment.NewLine + 
+    AppContext.BaseDirectory);
+
 Console.ReadKey();
 
 public interface IEmployeeReportCreator

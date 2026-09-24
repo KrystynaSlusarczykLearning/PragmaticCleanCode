@@ -53,6 +53,9 @@ var adults = new List<Person>();
     var inactiveUserId = new CompositeId(4, 12, 16);
 }
 
+Console.WriteLine("Press any key to close.");
+Console.ReadKey();
+
 // This name is correct because this method handles one Vector.
 Vector NormalizeVector(Vector vector) { throw new NotImplementedException(); }
 
@@ -82,7 +85,7 @@ var newPointMoved = point.MoveBy(1, 2);
 
 // ### Avoiding Hungarian notation and type-based names 
 
-// Avoid type prefixes when the type is already known. 
+// Avoid type prefixes 
 int intAge;
 string strLastName;
 List<int> numbersList;
@@ -246,7 +249,7 @@ public class UsersStorage
     // It saves only when the validation succeeds.
     public void SaveUser(User user)
     {
-        if (user.Email != null)
+        if (user.Email is not null)
         {
             _usersRepository.Save(user);
         }
@@ -267,7 +270,7 @@ public class UsersStorage
     
     public bool IsValid(User user)
     {
-        return user.Email != null;
+        return user.Email is not null;
     } 
 }
 

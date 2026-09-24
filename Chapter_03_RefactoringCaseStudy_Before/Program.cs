@@ -1,5 +1,11 @@
 ﻿using System.Text.Json;
 
+var fileManager = new FileManager();
+fileManager.IdFinder("testFile", ".", "txt", 5);
+
+Console.WriteLine("Press any key to close.");
+Console.ReadKey();
+
 public class FileManager
 {
     public void IdFinder(string name, string dir, string ex, int id)

@@ -1,5 +1,12 @@
 ﻿using System.Text.Json;
 
+var idExistenceChecker = new IdExistenceChecker();
+idExistenceChecker.CheckIfIdExistsInFile(
+    5, new FileIdentity(".", "testFile", "json"));
+
+Console.WriteLine("Press any key to close.");
+Console.ReadKey();
+
 public class IdExistenceChecker
 {
     private const string Txt = "txt";

@@ -43,8 +43,8 @@ public class AppointmentsConfirmerAndPatientNotificationsSender
     }
 
     public void NotifyAboutVisit(
-        Patient patient,
         DateTime appointmentDate,
+        Patient patient,
         Doctor doctor)
     {
         // Implementation 

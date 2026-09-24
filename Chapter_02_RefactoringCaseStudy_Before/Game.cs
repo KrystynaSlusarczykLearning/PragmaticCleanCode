@@ -1,4 +1,16 @@
-﻿Console.WriteLine("Press any key to close.");
+﻿char[,] board =
+{
+    { 'X', 'O', 'O' },
+    { 'O', 'X', 'O' },
+    { 'O', 'O', 'X' }
+};
+
+Game game = new Game(board);
+
+Console.WriteLine("Is won by X? " + game.Win('X'));  // True  - diagonal
+Console.WriteLine("Is won by O? " + game.Win('O'));  // False
+
+Console.WriteLine("Press any key to close.");
 Console.ReadKey();
 
 //Tic Tac Toe game - for now only checks if the game is won 

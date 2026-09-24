@@ -16,7 +16,7 @@ public class PersonalDataAccess_Inconsistent
     public Person GetById(int id)
     {
         var person = _peopleRepository.GetById(id);
-        if (person == null)
+        if (person is null)
         {
             throw new KeyNotFoundException($"No person with id {id} was found.");
         }
@@ -26,7 +26,7 @@ public class PersonalDataAccess_Inconsistent
     public Person GetByNames(string firstName, string lastName)
     {
         var person = _peopleRepository.GetByNames(firstName, lastName);
-        if (person == null)
+        if (person is null)
         {
             Console.WriteLine("Person not found.");
         }
@@ -36,7 +36,7 @@ public class PersonalDataAccess_Inconsistent
     public bool GetByDateOfBirth(DateTime dateOfBirth, out Person result)
     {
         result = _peopleRepository.GetByDateOfBirth(dateOfBirth);
-        return result != null;
+        return result is not null;
     }
 }
 
@@ -53,7 +53,7 @@ public class PersonalDataAccess
     public Person GetById(int id)
     {
         var person = _peopleRepository.GetById(id);
-        if (person == null)
+        if (person is null)
         {
             throw new KeyNotFoundException(
                 $"No person with id {id} was found.");
@@ -64,7 +64,7 @@ public class PersonalDataAccess
     public Person GetByNames(string firstName, string lastName)
     {
         var person = _peopleRepository.GetByNames(firstName, lastName);
-        if (person == null)
+        if (person is null)
         {
             throw new KeyNotFoundException(
                 $"No person named {firstName} {lastName} was found.");
@@ -75,7 +75,7 @@ public class PersonalDataAccess
     public Person GetByDateOfBirth(DateTime dateOfBirth)
     {
         var person = _peopleRepository.GetByDateOfBirth(dateOfBirth);
-        if (person == null)
+        if (person is null)
         {
             throw new KeyNotFoundException(
                 $"No person born on {dateOfBirth.ToShortDateString()} was found.");

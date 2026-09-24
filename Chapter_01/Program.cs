@@ -21,7 +21,7 @@ public class Authorizer
      User u, UserAction ua)
     {
         if (_usersRepository
-            .GetById(u.Id) == null)
+            .GetById(u.Id) is null)
         {
             throw new NonExistentUserException(u);
         }
