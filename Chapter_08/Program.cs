@@ -21,7 +21,7 @@ public class TextFilePersonalDataAccess_BreakingIsp : IPersonalDataAccess
     {
         var peopleLines = File.ReadAllLines("someFile.txt");
         return peopleLines.First(
-            line => line.StartsWith(id.ToString()));
+            line => line.StartsWith($"{id} "));
     }
 
     public void Write(int id, string firstName, string lastName)
@@ -74,7 +74,7 @@ public class TextFilePersonalDataAccess : IPersonalDataReader, IPersonalDataWrit
     {
         var peopleLines = File.ReadAllLines(FilePath);
         return peopleLines.First(
-            line => line.StartsWith(id.ToString()));
+            line => line.StartsWith($"{id} "));
     }
 
     public void Write(int id, string firstName, string lastName)
@@ -90,6 +90,9 @@ public class CensusPersonalDataAccess : IPersonalDataReader
 
     public string Read(int id)
     {
+        // Simplified for brevity.
+        // Production code should reuse
+        // an injected HttpClient and use async/await.
         using HttpClient client = new HttpClient();
         HttpResponseMessage response = client.GetAsync(Url).Result;
         response.EnsureSuccessStatusCode();

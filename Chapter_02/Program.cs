@@ -90,7 +90,7 @@ int intAge;
 string strLastName;
 List<int> numbersList;
 
-// Prefer domain names. 
+// Prefer domain names 
 int age;
 string lastName;
 List<int> numbers;

@@ -1,7 +1,7 @@
 ﻿public class IngredientsRepository : IIngredientsRepository
 {
     private const string IngredientsFile = "ingredients.txt";
-    private IFileAccess _fileAccess;
+    private readonly IFileAccess _fileAccess;
 
     public IngredientsRepository(IFileAccess fileAccess)
     {

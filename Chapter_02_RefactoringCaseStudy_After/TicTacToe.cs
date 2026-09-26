@@ -63,11 +63,11 @@ public class TicTacToe
     private bool IsAnyDiagonalFilledWith(char playerSymbol)
     {
         if ((_board[0, 0] == playerSymbol &&
-            _board[1, 1] == playerSymbol &&
-            _board[2, 2] == playerSymbol) ||
+             _board[1, 1] == playerSymbol &&
+             _board[2, 2] == playerSymbol) ||
             (_board[0, 2] == playerSymbol &&
-            _board[1, 1] == playerSymbol &&
-            _board[2, 0] == playerSymbol))
+             _board[1, 1] == playerSymbol &&
+             _board[2, 0] == playerSymbol))
         {
             return true;
         }

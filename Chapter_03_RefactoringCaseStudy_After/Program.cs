@@ -23,7 +23,8 @@ public class IdExistenceChecker
 
         if (fileIdentity.Extension != Txt && fileIdentity.Extension != Json)
         {
-            Console.WriteLine("Unsupported file extension: " + fileIdentity.Extension);
+            Console.WriteLine(
+                "Unsupported file extension: " + fileIdentity.Extension);
             return;
         }
 

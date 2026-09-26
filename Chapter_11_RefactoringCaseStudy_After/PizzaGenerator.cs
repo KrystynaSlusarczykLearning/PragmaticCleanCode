@@ -1,7 +1,7 @@
 ﻿public class PizzaGenerator
 {
-    private IIngredientsRepository _ingredientsRepository;
-    private ICollectionRandomizer _collectionRandomizer;
+    private readonly IIngredientsRepository _ingredientsRepository;
+    private readonly ICollectionRandomizer _collectionRandomizer;
 
     public PizzaGenerator(
         IIngredientsRepository ingredientsRepository,

@@ -8,7 +8,7 @@ public class BankAccount_BreakingLsp
     {
         if (amount < 10000)
         {
-            Console.WriteLine($"Withdrawing amount:{amount}");
+            Console.WriteLine($"Withdrawing amount: {amount}");
             //perform withdrawal
         }
         else
@@ -26,7 +26,7 @@ public class ChildrenAccount : BankAccount_BreakingLsp
     {
         if (amount < 1000)
         {
-            Console.WriteLine($"Withdrawing amount:{amount}");
+            Console.WriteLine($"Withdrawing amount: {amount}");
             //perform withdrawal
         }
         else
@@ -71,7 +71,7 @@ public class BankAccount
     {
         if (amount < _maxWithdrawalWithoutExtraAuthorization)
         {
-            Console.WriteLine($"Withdrawing amount:{amount}");
+            Console.WriteLine($"Withdrawing amount: {amount}");
             //perform withdrawal
         }
         else

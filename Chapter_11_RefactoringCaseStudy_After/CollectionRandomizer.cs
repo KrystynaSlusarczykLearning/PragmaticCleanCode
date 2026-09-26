@@ -1,6 +1,6 @@
 ﻿public class CollectionRandomizer : ICollectionRandomizer
 {
-    private IRandom _random;
+    private readonly IRandom _random;
 
     public CollectionRandomizer(IRandom random)
     {

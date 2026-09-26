@@ -302,21 +302,23 @@ public class GameState
         _gameDataWriter.WriteTo(saveFileName, data);
     }
 
-    public string BuildFileName(string fileName, string extension)
+    public string BuildFileName(
+        string fileNameWithoutExtension, 
+        string extension)
     {
-        return fileName + "." + extension;
+        return fileNameWithoutExtension + "." + extension;
     }
 }
 
 public struct Circle_BadDesign
 {
-    public int X { get; }
-    public int Y { get; }
+    public float X { get; }
+    public float Y { get; }
     public float Radius { get; }
 
     // This constructor needs 3 parameters, which is a lot.
     // It's better to group X and Y into a Point struct.
-    public Circle_BadDesign(int x, int y, float radius)
+    public Circle_BadDesign(float x, float y, float radius)
     {
         X = x;
         Y = y;
@@ -338,7 +340,7 @@ public struct Circle
     }
 }
 
-public record Point(int X, int Y);
+public record Point(float X, float Y);
 
 public static class UnitConverter
 {
